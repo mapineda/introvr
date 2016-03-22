@@ -44,7 +44,14 @@
           camera.position.set(0,15,0);
           scene.add(camera);
 
-          
+          renderer = new WebGLRenderer();
+          element = renderer.domElement;
+          container = document.getElementById('webglviewer');
+          container.appendChild(element);
+
+          effect = new THREE.StereoEffect(renderer);
+
+
         }
 
 
