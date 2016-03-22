@@ -78,6 +78,15 @@
           window.addEventListener('deviceorientation', setOrientationControls, true);
 
           //lighting
+          var light = new THREE.PointLight(0x999999, 2, 100);
+            light.position.set(50, 50, 50);
+            scene.add(light);
+
+            var lightScene = THREE.PointLight(0x999999, 2, 100);
+              lightDistance.position.set(0, 5, 0);
+              scene.add(lightScene);
+
+              
 
 
 
